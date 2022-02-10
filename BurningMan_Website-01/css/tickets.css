@@ -1,0 +1,77 @@
+/* Tickets Styles */
+
+
+.main_tickets {
+    padding: 30px 0px 120px;
+}
+.tickets_container {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.ticket_box {
+    text-align: center;
+    border: 1px solid #000;
+    width: 20%;
+    height: 300px;
+    flex-wrap: wrap;
+}
+.tickets_title {
+    text-align: center;
+    font-size: 50px;
+    margin-bottom: 40px;
+}
+.price {
+    font-size: 40px;
+    font-family: 'Anton', sans-serif;
+}
+.box_title {
+    font-size: 30px;
+}
+.box_subtitle {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+.purchase_btn {
+    font-size: 17px;
+    background: none;
+    border: 1px solid #000;
+    color: #000;
+    font-family: 'Anton', sans-serif;
+    padding: 18px 23px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.purchase_btn:hover {
+    background: #000;
+    color: #fff;
+    transition: all 0.3s;
+}
+
+@media only screen and (max-width: 1030px) {
+    .wrapper {
+        max-width: 970px;
+    }
+}
+@media only screen and (max-width: 770px) {
+    .tickets_container {
+        justify-content: space-around;
+    }
+    .ticket_box {
+        width: 30%;
+    }
+}
+@media only screen and (max-width: 430px) {
+    .tickets_container {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .ticket_box {
+        margin-bottom: 30px;
+        width: 60%;
+    }
+    .main_tickets {
+        padding: 30px 0px 50px;
+    }
+}
